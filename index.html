@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bird-Feeding 101</title>
+<link rel="icon" type="image/x-icon" href="Favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+<style>
+body{
+font-family:'Indie Flower';
+background-color: #e5deff;
+}
+h1, h2{
+font-family:'Red Hat Display';
+}
+#NavBar{
+    font-family:'Red Hat Display';
+}
+div.Pic{
+    padding: 30px;
+}
+</style>
+</head>
+<body>
+    <div id="NavBar">
+    <nav class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='container-fluid'>
+        <div class="navbar-header">
+        <a class='navbar-brand'>Bird-Feeding 101</a>
+        </div>
+        <ul class='nav navbar-nav'>
+        <li class='active'><a href='index.html'>Home</a></li>
+        <li><a href='Benefits.html'>Benefits</a></li>
+        <li><a href='How-To.html'>How-To</a></li>
+        </ul>
+        </nav>
+        </div>
+    </div>
+        <div class='row'>
+            <div class='col-sm-2' id='no1'>
+            </div>
+            <div class='col-sm-8' id='no2'>
+              <br>
+              <br>
+              <br>
+            <h1><center><b>Welcome to Bird-Feeding 101!</b></center></h1>
+            <h3><center>Bird-Feeding 101 aims to give you the basics of bird-feeding in a way that's clear and easy for everyone to understand.</center></h3>
+            <center><div class=Pic><img src="HungUp.JPG" width="50%"></div></center>
+            <br>
+            <br>
+            <h2><center><b>My Bird Feeder</b></center></h2>
+            <h3>Click on the buttons under the image to see the dimensions of the bird feeder.</h3>
+            <br>
+            <script>
+                function annotate(an) {
+                  var pic;
+                  if (an == 0) {
+                    pic = "Bird Feeder.jpg"
+                  } else {
+                    pic = "Annotated.jpg"
+                  }
+                  document.getElementById('myImage').src = pic;
+                }
+                </script>
+                
+                <center><div class=Pic><img id="myImage" src="Bird Feeder.jpg" width=20%></div></center>
+                
+                <h3><center>
+                <button type="button" onclick="annotate(1)">See Annotated Diagram</button>
+                <button type="button" onclick="annotate(0)">See Original Image</button>
+                </center></h3>
+            </div>
+            <div class='col-sm-2'id='no1'>
+            </div>
+            </div>
+    
+</body>
+</html>
